@@ -1,0 +1,16 @@
+.Card {
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    background: #ffffff;
+    margin: 1em 0em;
+   
+}
+
+.DishTitle {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin: 0;
+}
+.isClickable {
+    cursor: pointer;
+}

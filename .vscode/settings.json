@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/5dc71eca-9a52-4126-a9ec-f4589bd30833/resourceGroups/ai-inference-resource-group/providers/Microsoft.Web/sites/futurice-demo",
+    "appService.deploySubpath": ""
+}

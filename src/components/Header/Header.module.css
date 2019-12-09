@@ -1,0 +1,12 @@
+.Header {
+    /* display: flex;
+    flex-direction: row; */
+    height: 20%;
+    width: 100%;
+    /* justify-content: space-between; */
+    background: #a9d3b4;
+    
+}
+.Header{
+    padding: 10px 0;
+}

@@ -1,0 +1,35 @@
+.AddFood {
+   /* padding-left: 1em; */
+margin-top: 1em;}
+
+.SearchBar {
+   /* font-size: 1.5em; */
+   border-radius: 4px;
+   border: none;
+   height: 40px;
+   box-sizing : border-box;
+   margin: 0 auto;
+   width: 100%;
+   padding-left: 1em;
+  display: inline;
+}
+
+.alreadyAdded {
+   /* border-color: coral; */
+   /* box-shadow:0 0 5px #eb9b08 !important; */
+   background: transparent;
+}
+.alreadyAdded h4, alreadyAdded p {
+   color:rgb(138, 137, 137)
+}
+.clearText {
+   color: rgb(126, 126, 126);
+   float: right;
+}
+.clearText:hover {
+   color: #3f3d3d;
+}
+.SearchBarDiv {
+   padding-bottom: 2em;
+   border-bottom: 2px solid rgb(141, 189, 201);
+}

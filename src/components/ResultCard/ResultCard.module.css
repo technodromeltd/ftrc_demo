@@ -1,0 +1,21 @@
+.ResultCard {
+    padding: 1em;
+}
+
+.ResultCard:hover {
+    background: chartreuse;
+    }
+    
+    
+.DishTitle {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin: 0;
+}
+.main {
+    width: 90%;
+}
+.add {
+    display: inline-block;
+    /* float: right; */
+}

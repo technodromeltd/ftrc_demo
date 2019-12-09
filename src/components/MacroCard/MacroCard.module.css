@@ -1,0 +1,16 @@
+.Macrocard:hover {
+background: chartreuse;
+}
+
+
+.DishTitle {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.WeightInput input {
+    border: none;
+    width: 70px;
+    font-size: 1.2em;
+}

@@ -1,0 +1,19 @@
+.TodayStats {text-align:center ;
+border-radius: 4px;
+
+}
+
+.Spacer {
+    width: 50px;
+}
+
+.row {
+    padding: 0 2em;
+}
+.title {
+    margin: 0.5em;
+}
+
+.padding {
+    padding: 8px;
+}

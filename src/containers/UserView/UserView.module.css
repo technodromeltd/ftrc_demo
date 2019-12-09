@@ -1,0 +1,41 @@
+.UserView {
+    padding: 1em;
+    width: 700px;
+    border-radius: 4px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin:1em auto
+}
+
+.profileDetailsDiv {
+    flex:2
+}
+.profileImage {
+    padding-right: 1em;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.UserView div {
+    /* padding-left: 0.5em; */
+}
+.UserView input {
+    /* margin: 0px 10px; */
+    /* width: 200px; */
+    text-align: right;
+}
+.UserView label {
+    width: 20px;
+    margin: 12px 0px;
+}
+.responsiveDiv {
+
+}
+@media (min-width: 1000px) {
+    .UserView {
+        flex-direction: row;
+        width: 700px;
+    }
+}

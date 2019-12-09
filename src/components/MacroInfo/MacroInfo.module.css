@@ -1,0 +1,8 @@
+.MacroInfo p{
+    color: #a8a8a8;
+}
+@media (max-width: 415px) {
+    .MacroInfo p {
+        font-size: 80%;
+    }
+}
