@@ -63,16 +63,19 @@ export const addFoodToDiary = (foodId,weight,userId,dishName) => {
 
 export const updateUserSettings = (data) => {
     return dispatch => {
-        
-        axios.post('user/edit/'+API_KEY, {
+
+        const formattedData = {
             user_id: data.userId,
             calorie_goal: data.calorieGoal,
             protein_goal: data.proteinGoal,
             carb_goal: data.carbGoal,
             fat_goal: data.fatGoal,
-        })
+        }
+        
+        axios.post('user/edit/'+API_KEY, formattedData)
         .then(response => {
             console.log(response.status)
+            dispatch(userUpdated(formattedData))
             
         }).catch(e => {
             console.log(e)
@@ -80,7 +83,12 @@ export const updateUserSettings = (data) => {
 
     }
 }
-
+export const userUpdated = (userData) => { // TODO refactor, combine with loginSuccess
+    return {
+        type: actionTypes.UPDATE_USER_GOALS,
+        userDetails:userData 
+    }
+}
 
 export const loginSuccess = (userData) => {
     return {
@@ -95,6 +103,7 @@ export const logout = () => {
   
     }
 }
+
 export const tryLogin = (userName, password) => {
     return dispatch => {
        //TODO connect to auth server for login and get UserID in return

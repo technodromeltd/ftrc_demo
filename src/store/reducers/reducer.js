@@ -30,6 +30,16 @@ const reducer = (state = initialState,action) => {
                 ...state,
                 diary:action.diary
             }
+        case actionTypes.UPDATE_USER_GOALS: // TODO combine with login_user
+            return {
+                ...state,
+                userDetails: {...state.userDetails,
+                    calorieGoal: action.userDetails.calorie_goal,
+                    carbGoal: action.userDetails.carb_goal,
+                    proteinGoal: action.userDetails.protein_goal,
+                    fatGoal: action.userDetails.fat_goal,
+                }
+            }
         case actionTypes.LOGIN_USER:
           
             return {

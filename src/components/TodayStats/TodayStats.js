@@ -8,10 +8,11 @@ import {defaultSettings} from '../../store/defaultSettings'
 import {Row,Column} from 'simple-flexbox'
 import CircularMacroBar from '../CircularMacroBar/CircularMacroBar';
 import Card from '../Card/Card';
-const TodayStats = ({totals}) => {
+import {connect} from 'react-redux'
+const TodayStats = ({totals,userDetails}) => {
 
     return (
-   
+
 <Card>
   
       <div className={styles.TodayStats}>
@@ -20,25 +21,25 @@ const TodayStats = ({totals}) => {
           <Column>
             <span>Calories</span>
             <div className={styles.padding}>
-            <CircularMacroBar currentVal={totals.calories} goalVal={defaultSettings.dailyTarget.calories} unit="kcal"/>
+            <CircularMacroBar currentVal={totals.calories} goalVal={userDetails.calorieGoal} unit="kcal"/>
             </div>
           </Column>
           <Column>
             <span>Proteins</span>
             <div className={styles.padding}>
-            <CircularMacroBar currentVal={totals.carbs} goalVal={defaultSettings.dailyTarget.carbs} unit="g"/>
+            <CircularMacroBar currentVal={totals.proteins} goalVal={userDetails.proteinGoal} unit="g"/>
             </div>
           </Column>
           <Column>
             <span>Carbs</span>
             <div className={styles.padding}>
-            <CircularMacroBar currentVal={totals.carbs} goalVal={defaultSettings.dailyTarget.carbs} unit="g"/>
+            <CircularMacroBar currentVal={totals.carbs} goalVal={userDetails.carbGoal} unit="g"/>
             </div>
           </Column>
           <Column>
            <span>Fats</span>
             <div className={styles.padding}>
-            <CircularMacroBar currentVal={totals.fats} goalVal={defaultSettings.dailyTarget.fats} unit="g"/>
+            <CircularMacroBar currentVal={totals.fats} goalVal={userDetails.fatGoal} unit="g"/>
             </div>
           </Column>
 
@@ -54,4 +55,9 @@ TodayStats.propTypes = {};
 
 TodayStats.defaultProps = {};
 
-export default TodayStats;
+const mapStateToProps = (state) => {
+  return {
+    userDetails : state.userDetails
+  }
+} 
+export default connect(mapStateToProps)(TodayStats);
