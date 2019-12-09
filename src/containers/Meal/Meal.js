@@ -49,6 +49,8 @@ class Meal extends Component {
 
     return (
       <div className={styles.Meal} ref={this.topPageRef}>
+        <div  className={styles.mains}>
+
         <Card onClick={()=> this.props.history.goBack()}>
           Go Back
         </Card>
@@ -57,6 +59,7 @@ class Meal extends Component {
          
         {foods}
         
+        </div>
         <AddFood addedFoodIds={foodIds} mealName={mealName} />
 
       </div>

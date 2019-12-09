@@ -27,13 +27,10 @@ class AddFood extends Component {
   }
 
    searchTextChangeHandler = async (event) =>{
-      //console.log(event.target.value)
-      const searchText = event.target.value
      
-  
+      const searchText = event.target.value
       if(searchText) {
         this.setState({loading:true})
-        
         const results = await searchAPIDebounced(searchText)
     
         this.setState({
@@ -58,11 +55,7 @@ class AddFood extends Component {
 
   }
 
-  resultItemClickHandler = (id,weight) =>{
-    
-    this.props.onAddFoodToDiary(id,weight,1111,this.props.mealName)
-    
-  }
+  resultItemClickHandler = (id,weight) =>  this.props.onAddFoodToDiary(id,weight,1111,this.props.mealName)
 
   onWeightChange = (id,weight) => {
     
@@ -73,9 +66,9 @@ class AddFood extends Component {
   }
 
   clearInputClickHandler = () => {
-    console.log(this.inputRef.current)
+   
     this.inputRef.current.value=""
-    this.inputRef.current.focus()
+    
     this.setState({
       results: [],
       loading:false,
@@ -98,7 +91,7 @@ class AddFood extends Component {
   }
 
   else {
-    this.state.results.map(item => {
+    this.state.results.forEach(item => {
       let weight = 100
      
       if(item.food.food_id === this.state.currentItemId) weight = this.state.currentItemWeight 

@@ -1,1 +1,15 @@
-.Meal {margin: 1em 0;}
+.Meal {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: row;
+}
+.mains {
+    flex: 1;
+    padding-right: 1em;
+}
+
+@media (max-width :1000px) {
+    .Meal {
+        flex-direction: column;
+    }
+  }

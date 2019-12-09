@@ -1,6 +1,8 @@
 .AddFood {
    /* padding-left: 1em; */
-margin-top: 1em;}
+margin-top: 1em;
+flex: 1;
+}
 
 .SearchBar {
    /* font-size: 1.5em; */

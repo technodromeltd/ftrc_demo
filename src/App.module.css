@@ -5,12 +5,13 @@
 
 }
 .MainDiv {
-  width: 700px;
+  width: 1000px;
   margin: 0 auto;
+  
   
 }
 
-@media (max-width :700px) {
+@media (max-width :1000px) {
   .MainDiv {
     width: 90%;
   }
