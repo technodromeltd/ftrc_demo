@@ -44,6 +44,12 @@ const reducer = (state = initialState,action) => {
                 },
                 loggedUserId: action.userDetails.user_id
             }
+
+            case actionTypes.LOGOUT_USER:
+                return {
+                    ...state,
+                    loggedUserId: null
+                }
         default:
             return {...state}
                 

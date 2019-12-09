@@ -14,7 +14,7 @@ function App(props) {
   return (
     <div className={styles.App}>  
   
-      {loggedIn ?  <Header /> :  <Redirect to="/login" component={Login} />         } 
+      {loggedIn ?  <Header /> :  <Redirect to="/login"/>         } 
      
       <div className={styles.MainDiv}>
 

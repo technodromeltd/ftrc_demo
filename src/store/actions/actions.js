@@ -88,12 +88,19 @@ export const loginSuccess = (userData) => {
         userDetails:userData 
     }
 }
+export const logout = () => {
+    
+    return {
+        type: actionTypes.LOGOUT_USER,
+  
+    }
+}
 export const tryLogin = (userName, password) => {
     return dispatch => {
        //TODO connect to auth server for login and get UserID in return
        const userId = 1111 
 
-       if(userName === 'test' && password == 'test') { // TODO fix when auth implemented
+       if(userName === 'test' && password === 'test') { // TODO fix when auth implemented
      
         axios.get(API_KEY+'/user/'+userId)
         .then(response => {

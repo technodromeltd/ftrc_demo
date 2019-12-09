@@ -4,12 +4,12 @@ import styles from './Meal.module.css';
 
 import {connect} from 'react-redux'
 import Card from '../../components/Card/Card';
-import {Link} from 'react-router-dom';
+
 
 import * as actions from '../../store/actions/actions'
-import {countFoodMacro,countMacroTotals} from '../../utils/foodUtils'
+import {countMacroTotals} from '../../utils/foodUtils'
 import Spinner from '../../components/Spinner/Spinner';
-import MacroCard from '../../components/MacroCard/MacroCard';
+
 import AddFood from '../AddFood/AddFood';
 import MealItemCard from '../../components/MealItemCard/MealItemCard';
 import MealSummaryCard from '../../components/MealSummaryCard/MealSummaryCard';

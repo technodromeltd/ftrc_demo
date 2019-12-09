@@ -4,7 +4,6 @@ import styles from './AddFood.module.css';
 
 import axios from '../../axios'
 import AwesomeDebouncePromise from 'awesome-debounce-promise';
-import {TextField} from '@material-ui/core'
 import ResultCard from '../../components/ResultCard/ResultCard';
 import {connect} from 'react-redux'
 import * as actions from '../../store/actions/actions'

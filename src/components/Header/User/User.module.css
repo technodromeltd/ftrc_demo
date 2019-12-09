@@ -1,8 +1,8 @@
 .User {padding-right: 10px;}
 
-.ProfileImg img {
+.ProfileImg {
     border-radius: 50%;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 .userName {

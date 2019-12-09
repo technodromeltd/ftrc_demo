@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './MacroInfo.module.css';
-import { Row } from 'simple-flexbox';
+
 
 const MacroInfo = ({macros}) => {
   // const weightString =  (macros.weight === -1) ? "" : ", Weight: "+macros.weight+"g" ;
