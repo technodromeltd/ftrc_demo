@@ -30,7 +30,7 @@ class UserView  extends Component {
     //Flash submit button color show user sees some submit reaction
     const normalColor = this.submitRef.current.style.background
     this.submitRef.current.style.background= "#000"
-    //setTimeout(()=> this.submitRef.current.style.background=normalColor,1000)
+    setTimeout(()=> this.submitRef.current.style.background=normalColor,1000)
 
   }
 
